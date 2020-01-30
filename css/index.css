@@ -3,23 +3,60 @@
 :root {
     --main-color: black;
     font-family: 'Glegoo', serif;
+    --accent-color:DarkOliveGreen;
 }
 
 .favoriteparagraph {
     font-family: 'Linden Hill', serif;
-    font-size: 3rem;
-    text-align: center;
+    font-size: 5rem;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
 
 header .menu {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
+    border: 1px solid transparent;
 } 
 
 header .menu a {
     color: var(--main-color);
     text-transform: uppercase;
-    margin: 4px;
+    margin: 0px;
+    padding: 5px;
+}
+
+header .menu a:hover {
+    border: 1px solid var(--accent-color)
+}
+
+#headlogo {
+    display:flex;
+    justify-content: flex-start;
+}
+
+header .banner {
+    min-height: 800px;
+    background-image: url(/img/man.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+@media(min-width:550px) {
+    header nav{
+        display:flex;
+        align-items: center;
+    }
+    header .menu {
+        flex: 1 ;
+    }
 }
