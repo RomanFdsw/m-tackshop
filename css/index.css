@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Glegoo|Linden+Hill&display=swap');
+
+:root {
+    --main-color: black;
+    font-family: 'Glegoo', serif;
+}
+
+.favoriteparagraph {
+    font-family: 'Linden Hill', serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+}
+
+header .menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+} 
+
+header .menu a {
+    color: var(--main-color);
+    text-transform: uppercase;
+    margin: 4px;
+}
